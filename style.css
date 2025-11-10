@@ -1,0 +1,253 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff9933 0%, #ffffff 50%, #138808 100%);
+    background-attachment: fixed;
+    color: #333;
+    min-height: 100vh;
+}
+
+.navbar {
+    background: linear-gradient(90deg, #333 0%, #555 100%);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+.hero-section {
+    /* background-color: #138808; */
+    color: black;
+    padding: 60px 20px;
+    text-align: center;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ff9933;
+    transform: translateY(-2px);
+}
+
+.navbar a.active {
+    background: linear-gradient(90deg, #138808 0%, #0f6a06 100%);
+    color: white;
+    box-shadow: 0 0 10px rgba(19, 136, 8, 0.5);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 100px auto 20px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    text-align: center;
+    background: linear-gradient(45deg, #ff9933, #138808);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.registration-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #138808;
+    box-shadow: 0 0 10px rgba(19, 136, 8, 0.3);
+    outline: none;
+}
+
+.submit-btn {
+    background: linear-gradient(45deg, #138808, #0f6a06);
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(19, 136, 8, 0.3);
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(19, 136, 8, 0.4);
+}
+
+.candidate-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.candidate-card {
+    background: linear-gradient(135deg, #f9f9fa 0%, #e9ecef 100%);
+    border: 2px solid #dee2e6;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.candidate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    border-color: #138808;
+}
+
+.party-info {
+    display: flex;
+    align-items: center;
+}
+
+.party-info img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+.party-info h3 {
+    margin: 0;
+    color: #0056b3;
+}
+
+.party-info p {
+    margin: 0;
+    color: #555;
+}
+
+.vote-btn {
+    background: linear-gradient(45deg, #ff9933, #e68a2e);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 153, 51, 0.3);
+    font-weight: bold;
+}
+
+.vote-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 153, 51, 0.4);
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    margin: 10px 5px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #138808, #0f6a06);
+    color: white;
+    box-shadow: 0 4px 15px rgba(19, 136, 8, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(19, 136, 8, 0.4);
+}
+
+footer {
+    background: linear-gradient(90deg, #333 0%, #555 100%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 768px) {
+    .navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    
+    .candidate-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .party-info {
+        margin-bottom: 10px;
+    }
+}

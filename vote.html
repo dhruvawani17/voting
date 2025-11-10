@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote - Indian Election System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="vote.html" class="active">Vote</a>
+        <a href="register.html">Register</a>
+    </div>
+
+    <div class="container">
+        <h1>Cast Your Vote</h1>
+        <p>Select your preferred candidate for the Lok Sabha Elections 2025.</p>
+        
+        <div class="candidate-list">
+            <div class="candidate-card">
+                <div class="party-info">
+                    <img src="https://via.placeholder.com/50" alt="Party A Symbol">
+                    <div>
+                        <h3>Candidate 1</h3>
+                        <p>Party A</p>
+                    </div>
+                </div>
+                <a href="success.html" class="vote-btn">Vote</a>
+            </div>
+            <div class="candidate-card">
+                <div class="party-info">
+                    <img src="https://via.placeholder.com/50" alt="Party B Symbol">
+                    <div>
+                        <h3>Candidate 2</h3>
+                        <p>Party B</p>
+                    </div>
+                </div>
+                <a href="success.html" class="vote-btn">Vote</a>
+            </div>
+            <div class="candidate-card">
+                <div class="party-info">
+                    <img src="https://via.placeholder.com/50" alt="Party C Symbol">
+                    <div>
+                        <h3>Candidate 3</h3>
+                        <p>Party C</p>
+                    </div>
+                </div>
+                <a href="success.html" class="vote-btn">Vote</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Election Commission of India. All rights reserved.</p>
+    </footer>
+
+    <script>
+        if (!localStorage.getItem('registered')) {
+            alert('You must register first to vote.');
+            window.location.href = 'register.html';
+        }
+    </script>
+</body>
+</html>
